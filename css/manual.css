@@ -27,6 +27,21 @@ box-shadow: 0 1px 1px rgba(0,0,0,0.05);
     background-color: rgba(9,9,8,1);
 }
 
+.bg-green
+{
+    background-color: #47CC38;
+}
+
+.bg-blue
+{
+    background-color: #09f;
+}
+
+.bg-yellow
+{
+    background-color: #F3EC1B;
+}
+
 .white
 {
 	color: #fff
@@ -194,8 +209,8 @@ border-color: #09f;
 
 .top-bottom-space-xl
 {
-	margin-top: 300px;
-	margin-bottom: 300px;
+	margin-top: 100px;
+	margin-bottom: 100px;
 }
 
 .top-bottom-space-s
