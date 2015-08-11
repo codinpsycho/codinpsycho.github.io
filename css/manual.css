@@ -63,8 +63,10 @@ background-color: inherit;
 color: #fff;
 }
 
-a:hover, a:focus {
-color: #DB5014;
+a:hover, a:focus
+{
+color: #D96436;
+/*color: #DB5014;*/
 text-decoration: none;
 }
 
@@ -143,7 +145,8 @@ box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
 background-color: #09f;
 }
 
-hr {
+hr
+{
 margin-top: 20px;
 margin-bottom: 20px;
 border: 5;
@@ -208,6 +211,12 @@ border-color: #09f;
 }
 
 .top-bottom-space-xl
+{
+	margin-top: 250px;
+	margin-bottom: 250px;
+}
+
+.top-bottom-space-l
 {
 	margin-top: 100px;
 	margin-bottom: 100px;
