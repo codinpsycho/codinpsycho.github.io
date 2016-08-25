@@ -3,20 +3,7 @@
 <head>
 <title>Happy B'day Ishu</title>
 <meta name="description" content="Programmer, dancer, traveller, nowdays making stuff @psychostore.in">
-<link href='http://fonts.googleapis.com/css?family=Carrois+Gothic+SC' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
-<link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Molot" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Caveat:400" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Baloo+Paaji" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Calligraffitti" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Clicker+Script" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 
 
@@ -104,7 +91,7 @@
 	function init()
 	{
 		//Detect Time
-		var target_date = new Date(2016,07,26, 03,01,00);
+		var target_date = new Date(2016,07,26, 03,05,00);
 		var timespan = countdown( target_date );
 		var sign = Math.sign(timespan.value);
 
@@ -145,19 +132,6 @@
 			var timespan = countdown( target_date );
 			clock.innerHTML = timespan.toString();
 		}
-		// clock.innerHTML = new Countdown({
-		// 		selector: '#timer',
-		// 	    msgBefore: "Will start at Christmas!",
-		// 	    msgAfter: "Happy new year folks!",
-		// 	    msgPattern: "{days} days, {hours} hours and {minutes} minutes before new year!",
-		// 	    dateStart: new Date('2013/12/25 12:00'),
-		// 	    dateEnd: new Date('Aug 25, 2016 02:20'),
-		// 	    onStart: function() {
-		// 	    	console.log('Merry Christmas!');
-		// 	    },
-		// 	    onEnd: function() {
-		// 	    	alert('Happy New Year!');
-		// 	    });
 	}
 
 	function show_msg()
