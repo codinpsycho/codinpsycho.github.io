@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Happy B'day Ishu</title>
+<meta name="description" content="Programmer, dancer, traveller, nowdays making stuff @psychostore.in">
+<link href='http://fonts.googleapis.com/css?family=Carrois+Gothic+SC' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Molot" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Caveat:400" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Baloo+Paaji" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Calligraffitti" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Clicker+Script" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+
+
+<link rel="stylesheet" type="text/css" href="http://csshake.surge.sh/csshake.min.css">
+<link rel="stylesheet" href= 'css/bootstrap.min.css' >
+<link rel="stylesheet" href= 'css/font-awesome.min.css' >
+<link rel="stylesheet" href= 'css/manual.css?v1' >
+<script type="text/javascript" src= 'js/jquery-2.1.3.min.js' ></script>
+<script type="text/javascript" src= 'js/bootstrap.min.js' ></script>
+<script type="text/javascript" src= 'js/countdown.min.js' ></script>
+<script type="text/javascript" src= 'js/typewriter.js' ></script>
+<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
+
+
+<header>
+    
+</header>
+</head>
+<body class="bg-amarnath">
+<h1 class='center' id='timer'></h1>
+
+<!-- <video class=" fullscreen center" playsinline autoplay controls>
+	<source src="videos/shru_preeti.mp4" type="video/mp4">
+</video> -->
+
+
+<div id = 'msg' hidden class="container">
+    <div class="row row-1 top-bottom-space">
+    	<div class="col-md-12 text-center">
+			<img class="circular-pic" width="400" src="images/ishu.jpg">
+		</div>	
+	   	<div class="col-md-12">
+		 	<h1 class="sue text-center">Happy Birthday IJ </h1>
+		 	<div class="col-md-12 text-center">
+		 		<i class=" text-center shake-vertical-slow shake-constant fa fa-chevron-down"></i>
+		 	</div>		 	
+      	</div>
+    </div>
+
+    <div class="row text-center row-2 top-bottom-space-xl">
+    	<div class="col-md-12" >
+        	<h1>Ishu, you know what? You are the most special person in my life</h1>
+
+    	</div>
+    </div>
+
+    <div class="row text-center row-3 top-bottom-space-xl">
+      <div class="col-md-12">
+        <h1>And today is your birthday</h1>        
+      </div>
+    </div>
+    
+    <div class="row text-center row-4 top-bottom-space-xl">
+      <div class="col-md-12">
+        <h1>So, I want to make you feel real special and loved</h1>
+      </div>
+    </div>
+
+    <div class="row text-center row-5 top-bottom-space-xl">
+      <div class="col-md-12  text-center">
+      	<button class="enlarge shake-constant shake-constant--hover btn btn-lg btn-tabbed amarnath"><h1>So here you go, click here !</h1></button>
+      </div>
+    </div>
+
+    <div class="row row-6">
+      <div class="col-md-12">
+      		<h5 class="text-center"> <a href="" class="white"><strong><i class="fa fa-angle-left"></i> <i class="fa fa-angle-right"></i> by codinpsycho</strong></a>
+			</h5>
+      </div>
+    </div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+	window.sr = ScrollReveal({ reset: true, duration:900, distance:'10px' });
+	sr.reveal('.row-1');
+	sr.reveal('.row-2');
+	sr.reveal('.row-3');
+	sr.reveal('.row-4');
+	sr.reveal('.row-5');
+
+	init();	
+
+	function init()
+	{
+		//Detect Time
+		var target_date = new Date(2016,07,26, 03,01,00);
+		var timespan = countdown( target_date );
+		var sign = Math.sign(timespan.value);
+
+		if(sign === -1)
+		{
+			show_timer(target_date);
+		}
+		else
+		{
+			show_msg();
+		}
+
+	}
+
+	function countdown_over(target_date)
+	{
+		var timespan = countdown( target_date );
+		var sign = Math.sign(timespan.value);
+
+		return (sign === -1 ? false : true);
+	}
+
+	function show_timer(target_date)
+	{	
+		setInterval( function() { update_time(target_date) }, 1000);
+	}
+
+	function update_time(target_date)
+	{
+		if(countdown_over(target_date) == true)
+		{
+			//Refresh
+			location.reload();		
+		}
+		else
+		{
+			var clock = document.getElementById('timer');
+			var timespan = countdown( target_date );
+			clock.innerHTML = timespan.toString();
+		}
+		// clock.innerHTML = new Countdown({
+		// 		selector: '#timer',
+		// 	    msgBefore: "Will start at Christmas!",
+		// 	    msgAfter: "Happy new year folks!",
+		// 	    msgPattern: "{days} days, {hours} hours and {minutes} minutes before new year!",
+		// 	    dateStart: new Date('2013/12/25 12:00'),
+		// 	    dateEnd: new Date('Aug 25, 2016 02:20'),
+		// 	    onStart: function() {
+		// 	    	console.log('Merry Christmas!');
+		// 	    },
+		// 	    onEnd: function() {
+		// 	    	alert('Happy New Year!');
+		// 	    });
+	}
+
+	function show_msg()
+	{
+		var msg_container = document.getElementById('msg');
+		msg_container.removeAttribute('hidden');
+		console.log(msg_container);
+		typeWriter("#demo","true",100);
+	}
+
+</script>

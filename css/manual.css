@@ -2,10 +2,10 @@
 
 
 body {
-font-family: "roboto";
-font-size: 14px;
+font-family:'Poiret One', cursive;
+font-size: 40px;
 line-height: 1.428571429;
-color: #000;
+color: #fcfcfc;
 }
 
 .panel {
@@ -25,6 +25,11 @@ box-shadow: 0 1px 1px rgba(0,0,0,0.05);
 .bg-black
 {
     background-color: rgba(9,9,8,1);
+}
+
+.bg-amarnath
+{
+    background-color: #AD2E24;
 }
 
 .bg-green
@@ -55,6 +60,24 @@ box-shadow: 0 1px 1px rgba(0,0,0,0.05);
 .black
 {
 	color: #000;
+}
+
+.amarnath
+{
+	color : #AD2E24;
+}
+
+.sue
+{
+	font-family: 'Dancing Script';
+	letter-spacing: 1px;
+	font-size: 90px;
+}
+
+.enlarge
+{
+	width: 80%;
+	height: 120px;
 }
 
 .nav>li>a:hover, .nav>li>a:focus {
@@ -280,4 +303,34 @@ input
 .modal
 {
     color: #333;
+}
+
+.center
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
+.fullscreen
+{
+	width: 100%;
+	height: 100%;
+}
+
+.bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
 }
