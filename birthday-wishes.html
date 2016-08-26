@@ -6,8 +6,6 @@
 <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 
-
-<link rel="stylesheet" type="text/css" href="http://csshake.surge.sh/csshake.min.css">
 <link rel="stylesheet" href= 'css/bootstrap.min.css' >
 <link rel="stylesheet" href= 'css/font-awesome.min.css' >
 <link rel="stylesheet" href= 'css/manual.css?v1' >
@@ -45,36 +43,35 @@
 
 <script type="text/javascript">
 
-var index = 0;
+	var index = 0;
 
-var videos = [			
-			"videos/pagalpanti.mp4",
-			"videos/preeti.mp4",
-			"videos/jagga.mp4",
-			"videos/piyush.mp4",
-			"videos/kaur.mp4",
-			"videos/no.mp4",
-			"videos/nunu.mp4",
-			"videos/no_no_1.mp4",
-			"videos/no_no.mp4",	
-			"videos/charan.mp4",
-			"videos/max.mp4",
-			"videos/rohit.mp4",
-			"videos/prateek.mp4",			
-			"videos/bebo.mp4",
-			"videos/shruti.mp4",
-			];
-var max_vids = videos.length - 1;
+	var videos = [
+				"videos/pagalpanti.mp4",
+				"videos/preeti.mp4",
+				"videos/jagga.mp4",
+				"videos/piyush.mp4",
+				"videos/kaur.mp4",
+				"videos/no.mp4",
+				"videos/nunu.mp4",
+				"videos/no_no_1.mp4",
+				"videos/no_no.mp4",	
+				"videos/charan.mp4",
+				"videos/max.mp4",
+				"videos/rohit.mp4",
+				"videos/prateek.mp4",
+				"videos/bebo.mp4",
+				"videos/shruti.mp4",
+				];
+	var max_vids = videos.length - 1;
 	
-	var vif = document.getElementById('video');
-    vif.addEventListener('ended', next_video, false);
+	var vid = document.getElementById('video');
+    vid.addEventListener('ended', next_video, false);
 
     play_video();
 
 	function next_video()
 	{
 		index = index == max_vids ? index = max_vids : ++index;
-		console.log(index);
 		play_video();		
 	}
 
@@ -95,7 +92,6 @@ var max_vids = videos.length - 1;
 	function previous_video()
 	{
 		index = index == 0 ? index = 0 : --index;
-		console.log(index);
 		play_video();
 	}
 
