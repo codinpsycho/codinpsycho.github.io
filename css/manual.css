@@ -204,15 +204,16 @@ color: #09f;
 .pager li>a, .pager li>span {
 display: inline-block;
 padding: 5px 14px;
-background-color: rgb(9,9,8);
+background-color: #AD2E24;
 border: 1px solid transparent;
 border-radius: 15px;
+color: #fcfcfc;
 }
 
 .pager li>a:hover, .pager li>a:focus {
 text-decoration: none;
-background-color: rgb(9,9,8);
-color: #fff;
+background-color: #fcfcfc;
+color: #AD2E24;
 }
 
 .btn-primary {
