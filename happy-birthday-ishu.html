@@ -21,7 +21,7 @@
 </header>
 </head>
 <body class="bg-amarnath">
-<h1 class='center' id='timer'></h1>
+<h1 class="center" id='timer'></h1>
 
 
 <div id = 'msg' hidden class="container">
@@ -73,7 +73,7 @@
 
     <div class="row text-center row-6 top-bottom-space-xl">
 		<div class="col-md-12  text-center">
-			<a target="_blank" href="birthday-wishes.html" class="enlarge shake-constant shake-constant--hover btn btn-default amarnath"><h1>So here you go, click here!</h1></a>
+			<a target="_blank" href="birthday-wishes.html" class="btn btn-primary"><h2>So here you go, click here!</h2></a>
 		</div>
     </div>
 
@@ -101,7 +101,6 @@
 	function init()
 	{
 		//Detect Time
-		var target_date = new Date(2016,07,26, 8,55,00);
 		var timespan = countdown( target_date );
 		var sign = Math.sign(timespan.value);
 
@@ -134,13 +133,13 @@
 		if(countdown_over(target_date) == true)
 		{
 			//Refresh
-			location.reload();		
+			location.reload();
 		}
 		else
 		{
 			var clock = document.getElementById('timer');
 			var timespan = countdown( target_date );
-			clock.innerHTML = timespan.toString();
+			clock.innerHTML = timespan.toString() + " left for your b'day surprise.";
 		}
 	}
 
