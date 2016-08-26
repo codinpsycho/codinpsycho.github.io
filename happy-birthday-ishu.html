@@ -21,8 +21,8 @@
 </header>
 </head>
 <body class="bg-amarnath">
-<h1 class="center" id='timer'></h1>
 
+<h1 class="center" id='timer'></h1>
 
 <div id = 'msg' hidden class="container">
     <div class="row row-1 top-bottom-space">
@@ -101,6 +101,7 @@
 	function init()
 	{
 		//Detect Time
+		var target_date = new Date(2016,07,27, 9,30,00);
 		var timespan = countdown( target_date );
 		var sign = Math.sign(timespan.value);
 
